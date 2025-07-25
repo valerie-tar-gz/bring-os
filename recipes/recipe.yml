@@ -21,7 +21,13 @@ modules:
     install:
       - micro
       - mpv
-
+      
+  - type: os-release
+    properties:
+      ID: bring_os
+      NAME: BringOS
+      PRETTY_NAME: BringOS
+  
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
